@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`All tests Should render correctly snapshot 1`] = `
+<View
+  onLayout={[Function]}
+>
+  <View
+    style={
+      Object {
+        "bottom": 0,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#353031",
+          "fontSize": 35,
+          "fontWeight": "bold",
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+      testID="text"
+    >
+      Welcome, 
+      No Name
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      label="Name"
+      onChangeText={[Function]}
+      placeholder="Please, typing here...."
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "borderColor": "#CDCDCD",
+          "borderRadius": 10,
+          "borderWidth": 1,
+          "padding": 10,
+          "width": 350,
+        }
+      }
+      testID="name"
+      underlineColorAndroid="transparent"
+      value={null}
+    />
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#993399",
+          "borderRadius": 8,
+          "height": 50,
+          "justifyContent": "center",
+          "marginTop": 15,
+          "opacity": 1,
+          "width": 350,
+        }
+      }
+      testID="buttonChange"
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFF",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "textAlign": "center",
+          }
+        }
+      >
+        Change
+      </Text>
+    </View>
+    <Text>
+      Renders: ..
+      0
+    </Text>
+  </View>
+</View>
+`;
