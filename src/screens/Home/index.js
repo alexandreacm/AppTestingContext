@@ -6,7 +6,7 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 
-import { useNameContext } from "../../contexts/NameProvider";
+import { useCustomContext } from "../../contexts/NameProvider";
 import { styles } from "./styles";
 
 export function Home({ name, setName, setError, error }) {
@@ -57,7 +57,8 @@ export function Home({ name, setName, setError, error }) {
 }
 
 export default (props) => {
-  const { name, setName, saveName, setError, error } = useNameContext();
+  // const { name, setName, saveName, setError, error } = useNameContext();
+  const { name, setName, saveName, setError, error } = useCustomContext();
   return (
     <Home
       name={name}

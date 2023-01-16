@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 
 const NameContext = createContext({});
 
-export const useNameContext = () => useContext(NameContext);
+// export const useNameContext = () => useContext(NameContext);
 
 function NameProvider({ children }) {
   const [name, setName] = useState(null);
@@ -28,3 +28,10 @@ function NameProvider({ children }) {
 }
 
 export default NameProvider;
+
+export const useCustomContext = () => { 
+  const { name, setName, saveName, setError, error } = useContext(NameContext);
+
+  return { name, setName, saveName, setError, error }
+}
+
